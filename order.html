@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="order">
+    <nav class="navbar">
+        <div class="content">  
+    
+            <div class="sidebar">
+                <div class="logo-details">
+                    <i class='bx bx-menu'></i>
+                    <span class="logo-name">Menu</span>
+                </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="main.html">
+                            <i class='bx bx-home'></i>
+                            <span class="link-name">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.html">
+                            <i class='bx bxs-book-content bx-flip-horizontal' ></i>
+                            <span class="link-name">Products<span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="order.html">
+                            <i class='bx bxs-cart-add'></i></i>
+                            <span class="link-name">Order Here<span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about-us.html">
+                            <i class='bx bxs-buildings bx-flip-horizontal' ></i>
+                            <span class="link-name">About Us<span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            <i class='bx bxs-contact' ></i>
+                            <span class="link-name">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+        </div>
+    </nav>
+
+    <div class="order-form box">
+    <h2><center>Pesan Disini</center></h2>
+        <form method="GET" name="form" action="invoice.html">
+        <hr>
+            <table class="order-table">
+                <tr class="tes">
+                    <tr><td>Nama Anda :</td></tr> 
+                    <tr><td><input type="text" name="nama" id="nama" placeholder="Masukkan Nama Anda" required></td></tr> 
+         
+                </tr>
+                <tr>
+                    <tr><td>Produk :</td></tr> 
+                    <tr><td>
+                        <select onchange="harga()" name="produk" id="produk" size="1" placeholder="Pilih Produk" required>
+                            <option value=""disabled selected hidden>Pilih Produk</option>
+                            <option>Lenovo Thinkpad</option>
+                            <option>Lenovo Ideapad Slim</option>
+                            <option>Lenovo Legion</option>
+                            <option>Acer Classic</option>
+                            <option>Acer Aspire Touch Screen</option>
+                            <option>Acer Aspire 5</option>
+                            <option>Asus Home</option>
+                            <option>Asus Zephyrus</option>
+                            <option>Asus ROG</option>
+                        </select>
+                    </td></tr> 
+                    <tr><td class="harga">Harga :  
+                        <pre id="hargaProduk">
+                        </pre>
+                        <input type="hidden" name="hargaP" id="hargaP" required>
+                    </td></tr>
+                </tr>
+                <tr><font color="White">
+                    <tr><td>Metode Pembayaran :</td></tr> 
+                    <tr><td>
+                        <select id="bayar" name="bayar" size="1" required>
+                            <option value=""disabled selected hidden>Pilih Metode Pembayaran</option>
+                            <option>Bank Transfer</option>
+                            <option>Credit Card</option>
+                            <option>Indomaret Payment</option>
+                            <option>E-Wallet</option>
+                            <option>Cash on Delivery</option>
+                    </td></tr>
+                </tr>
+                <tr>
+                    <tr><td>Alamat Anda :</td></tr> 
+                    <tr><td><textarea name="alamat" id="alamat" cols="30" rows="2" placeholder="Masukkan Alamat Pengiriman" required></textarea></td></tr> 
+                </tr>
+                <tr>
+                    <tr><td>Catatan :</td></tr> 
+                    <tr><td><textarea name="catatan" cols="40" rows="2" id="catatan" placeholder="Tambahan..."></textarea></td></tr> 
+                </tr>
+            </table>
+        <hr>
+        <center>
+            <input class="order-btn" type="submit" value="Pesan">
+            <input class="order-cancel" type="reset" value="Batal">
+        </center>
+        </form>
+    </div>
+
+    <script src="invoice-function.js"></script>
+</body>
+</html>

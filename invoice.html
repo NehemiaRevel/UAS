@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invoice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="invoice-page">
+    <div>
+        <div class="invoice box">
+        <h2><center>Invoice</center></h2>
+        <br><hr><br>
+        <table>
+            <tr>
+                <td>Nama Anda<td>: <span id="nama-Inv"></span></td></td>
+            </tr>
+            <tr>
+                <td>Alamat Anda
+                    <td>: <span id="alamat-Inv"></span>
+                </td></td>
+            </tr>
+            <tr>
+                <td>Produk
+                    <td>:
+                        <span id="produk-Inv"></span>
+                    </td>
+                </td>
+                <tr>
+                    <td>Harga<td>: <span id="harga-Inv"></span></td></td>
+                </tr>
+                </tr>
+            <tr><font color="White">
+                <td>Metode Pembayaran
+                    <td>:
+                        <span id="bayar-Inv"></span>
+                    </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Catatan
+                    <td>:
+                        <span id="catatan-Inv"></span>
+                    </td>
+                </td>
+            </tr>
+        </table>
+        <br><hr><br>
+        <center>
+        <form action="main.html">
+            <input class="back-btn" type="submit" value="Kembali">
+        </form>
+        </center>
+        </div>
+    </div>
+    <script src="invoice-function.js"></script>
+    <script>
+        invoice();
+    </script>
+</body>
+</html>
