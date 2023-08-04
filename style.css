@@ -391,6 +391,7 @@ html{
 }
 .product-list .list-box .list-order a:hover{
   color: #ffd60a;
+  transition: all ease 0.5s;
 }
 .feat-banner{
   height: 100vh;
@@ -472,6 +473,7 @@ html{
 }
 .order-btn:hover{
   background-color: #ffd60a;
+  transition: all ease 0.3s;
 }
 .order-cancel{
   background-color: #d24512f5; 
@@ -488,6 +490,7 @@ html{
 .order-cancel:hover{
   color: #11101d;
   background-color: #ffd60a;
+  transition: all ease 0.3s;
 }
 .back-btn{
   background-color: #E4E9F7; 
@@ -500,6 +503,10 @@ html{
   font-size: 16px;
   border-radius: 8px;
   margin-left: 15px;
+}
+.back-btn:hover{
+  background-color: #ffd60a;
+  transition: all ease 0.3s;
 }
 .invoice-page{
   height: 100vh;
